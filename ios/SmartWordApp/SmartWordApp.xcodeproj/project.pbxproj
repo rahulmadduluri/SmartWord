@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF01F5102434582D00E1149F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF01F50F2434582D00E1149F /* Assets.xcassets */; };
+		AF01F5132434582D00E1149F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF01F5122434582D00E1149F /* Preview Assets.xcassets */; };
+		AF01F5162434582D00E1149F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF01F5142434582D00E1149F /* Main.storyboard */; };
+		AF61F68524345AFF00F00670 /* encoded_tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = AF01F4FE242C995000E1149F /* encoded_tokens.json */; };
+		AF61F68624345AFF00F00670 /* gpt2-merges.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF01F4FF242C995000E1149F /* gpt2-merges.txt */; };
+		AF61F68724345AFF00F00670 /* gpt2-vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = AF01F4FD242C995000E1149F /* gpt2-vocab.json */; };
+		AF61F69024345B0400F00670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6E3C4724283F41005649B0 /* Assets.xcassets */; };
+		AF61F69E243467D400F00670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E3C4124283F40005649B0 /* AppDelegate.swift */; };
+		AF61F6A0243467D400F00670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E3C4524283F40005649B0 /* ContentView.swift */; };
+		AF61F6A1243467D400F00670 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E3C5524283FF8005649B0 /* EditorView.swift */; };
+		AF61F6A2243467D400F00670 /* SuggestionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F503242DD1CE00E1149F /* SuggestionRow.swift */; };
+		AF61F6A3243467D400F00670 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61F6962434665B00F00670 /* AppSettings.swift */; };
+		AF61F6A4243467E700F00670 /* gpt2-64-12-2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4FB242C981000E1149F /* gpt2-64-12-2.mlmodel */; };
+		AF61F6A5243467E700F00670 /* GPT2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4F0242C96B800E1149F /* GPT2.swift */; };
+		AF61F6A6243467E700F00670 /* GPT2ByteEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4EF242C96B800E1149F /* GPT2ByteEncoder.swift */; };
+		AF61F6A7243467E700F00670 /* GPT2Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4EA242C96B800E1149F /* GPT2Tokenizer.swift */; };
+		AF61F6A8243467E700F00670 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4EB242C96B800E1149F /* Math.swift */; };
+		AF61F6A9243467E700F00670 /* MLMultiArray+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4ED242C96B800E1149F /* MLMultiArray+Utils.swift */; };
+		AF61F6AA243467E700F00670 /* SquadDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4E9242C96B700E1149F /* SquadDataset.swift */; };
+		AF61F6AB243467E700F00670 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01F4EE242C96B800E1149F /* Utils.swift */; };
+		AF6E3C4824283F41005649B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6E3C4724283F41005649B0 /* Assets.xcassets */; };
+		AF6E3C4B24283F41005649B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6E3C4A24283F41005649B0 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF01F4E9242C96B700E1149F /* SquadDataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquadDataset.swift; sourceTree = "<group>"; };
+		AF01F4EA242C96B800E1149F /* GPT2Tokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPT2Tokenizer.swift; sourceTree = "<group>"; };
+		AF01F4EB242C96B800E1149F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		AF01F4ED242C96B800E1149F /* MLMultiArray+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Utils.swift"; sourceTree = "<group>"; };
+		AF01F4EE242C96B800E1149F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AF01F4EF242C96B800E1149F /* GPT2ByteEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPT2ByteEncoder.swift; sourceTree = "<group>"; };
+		AF01F4F0242C96B800E1149F /* GPT2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPT2.swift; sourceTree = "<group>"; };
+		AF01F4FB242C981000E1149F /* gpt2-64-12-2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "gpt2-64-12-2.mlmodel"; path = "../../../../scripts/gpt2-64-12-2.mlmodel"; sourceTree = "<group>"; };
+		AF01F4FD242C995000E1149F /* gpt2-vocab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gpt2-vocab.json"; sourceTree = "<group>"; };
+		AF01F4FE242C995000E1149F /* encoded_tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = encoded_tokens.json; sourceTree = "<group>"; };
+		AF01F4FF242C995000E1149F /* gpt2-merges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gpt2-merges.txt"; sourceTree = "<group>"; };
+		AF01F503242DD1CE00E1149F /* SuggestionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionRow.swift; sourceTree = "<group>"; };
+		AF01F5092434582A00E1149F /* SmartWordDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartWordDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF01F50B2434582A00E1149F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF01F50D2434582A00E1149F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF01F50F2434582D00E1149F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF01F5122434582D00E1149F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF01F5152434582D00E1149F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF01F5172434582D00E1149F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF01F5182434582D00E1149F /* SmartWordDesktop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartWordDesktop.entitlements; sourceTree = "<group>"; };
+		AF61F6962434665B00F00670 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		AF6E3C3E24283F40005649B0 /* SmartWordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartWordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6E3C4124283F40005649B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF6E3C4324283F40005649B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF6E3C4524283F40005649B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF6E3C4724283F41005649B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF6E3C4A24283F41005649B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF6E3C4D24283F41005649B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF6E3C4F24283F41005649B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6E3C5524283FF8005649B0 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF01F5062434582A00E1149F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6E3C3B24283F40005649B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF01F4FA242C96BD00E1149F /* HuggingFace */ = {
+			isa = PBXGroup;
+			children = (
+				AF01F4FE242C995000E1149F /* encoded_tokens.json */,
+				AF01F4FF242C995000E1149F /* gpt2-merges.txt */,
+				AF01F4FD242C995000E1149F /* gpt2-vocab.json */,
+				AF01F4FB242C981000E1149F /* gpt2-64-12-2.mlmodel */,
+				AF01F4F0242C96B800E1149F /* GPT2.swift */,
+				AF01F4EF242C96B800E1149F /* GPT2ByteEncoder.swift */,
+				AF01F4EA242C96B800E1149F /* GPT2Tokenizer.swift */,
+				AF01F4EB242C96B800E1149F /* Math.swift */,
+				AF01F4ED242C96B800E1149F /* MLMultiArray+Utils.swift */,
+				AF01F4E9242C96B700E1149F /* SquadDataset.swift */,
+				AF01F4EE242C96B800E1149F /* Utils.swift */,
+			);
+			path = HuggingFace;
+			sourceTree = "<group>";
+		};
+		AF01F50A2434582A00E1149F /* SmartWordDesktop */ = {
+			isa = PBXGroup;
+			children = (
+				AF01F50B2434582A00E1149F /* AppDelegate.swift */,
+				AF01F50D2434582A00E1149F /* ContentView.swift */,
+				AF01F50F2434582D00E1149F /* Assets.xcassets */,
+				AF01F5142434582D00E1149F /* Main.storyboard */,
+				AF01F5172434582D00E1149F /* Info.plist */,
+				AF01F5182434582D00E1149F /* SmartWordDesktop.entitlements */,
+				AF01F5112434582D00E1149F /* Preview Content */,
+			);
+			path = SmartWordDesktop;
+			sourceTree = "<group>";
+		};
+		AF01F5112434582D00E1149F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF01F5122434582D00E1149F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF6E3C3524283F40005649B0 = {
+			isa = PBXGroup;
+			children = (
+				AF6E3C4024283F40005649B0 /* SmartWordApp */,
+				AF01F50A2434582A00E1149F /* SmartWordDesktop */,
+				AF6E3C3F24283F40005649B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF6E3C3F24283F40005649B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF6E3C3E24283F40005649B0 /* SmartWordApp.app */,
+				AF01F5092434582A00E1149F /* SmartWordDesktop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF6E3C4024283F40005649B0 /* SmartWordApp */ = {
+			isa = PBXGroup;
+			children = (
+				AF6E3C4124283F40005649B0 /* AppDelegate.swift */,
+				AF6E3C4324283F40005649B0 /* SceneDelegate.swift */,
+				AF6E3C4524283F40005649B0 /* ContentView.swift */,
+				AF6E3C5524283FF8005649B0 /* EditorView.swift */,
+				AF01F503242DD1CE00E1149F /* SuggestionRow.swift */,
+				AF61F6962434665B00F00670 /* AppSettings.swift */,
+				AF01F4FA242C96BD00E1149F /* HuggingFace */,
+				AF6E3C4724283F41005649B0 /* Assets.xcassets */,
+				AF6E3C4C24283F41005649B0 /* LaunchScreen.storyboard */,
+				AF6E3C4F24283F41005649B0 /* Info.plist */,
+				AF6E3C4924283F41005649B0 /* Preview Content */,
+			);
+			path = SmartWordApp;
+			sourceTree = "<group>";
+		};
+		AF6E3C4924283F41005649B0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF6E3C4A24283F41005649B0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF01F5082434582A00E1149F /* SmartWordDesktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF01F5192434582D00E1149F /* Build configuration list for PBXNativeTarget "SmartWordDesktop" */;
+			buildPhases = (
+				AF01F5052434582A00E1149F /* Sources */,
+				AF01F5062434582A00E1149F /* Frameworks */,
+				AF01F5072434582A00E1149F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartWordDesktop;
+			productName = SmartWordDesktop;
+			productReference = AF01F5092434582A00E1149F /* SmartWordDesktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF6E3C3D24283F40005649B0 /* SmartWordApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF6E3C5224283F41005649B0 /* Build configuration list for PBXNativeTarget "SmartWordApp" */;
+			buildPhases = (
+				AF6E3C3A24283F40005649B0 /* Sources */,
+				AF6E3C3B24283F40005649B0 /* Frameworks */,
+				AF6E3C3C24283F40005649B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartWordApp;
+			packageProductDependencies = (
+			);
+			productName = SmartWordApp;
+			productReference = AF6E3C3E24283F40005649B0 /* SmartWordApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF6E3C3624283F40005649B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = rm;
+				TargetAttributes = {
+					AF01F5082434582A00E1149F = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					AF6E3C3D24283F40005649B0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AF6E3C3924283F40005649B0 /* Build configuration list for PBXProject "SmartWordApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF6E3C3524283F40005649B0;
+			packageReferences = (
+				AF6E3C572428441E005649B0 /* XCRemoteSwiftPackageReference "TextView" */,
+			);
+			productRefGroup = AF6E3C3F24283F40005649B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF6E3C3D24283F40005649B0 /* SmartWordApp */,
+				AF01F5082434582A00E1149F /* SmartWordDesktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF01F5072434582A00E1149F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF61F68724345AFF00F00670 /* gpt2-vocab.json in Resources */,
+				AF61F68624345AFF00F00670 /* gpt2-merges.txt in Resources */,
+				AF61F68524345AFF00F00670 /* encoded_tokens.json in Resources */,
+				AF01F5162434582D00E1149F /* Main.storyboard in Resources */,
+				AF61F69024345B0400F00670 /* Assets.xcassets in Resources */,
+				AF01F5132434582D00E1149F /* Preview Assets.xcassets in Resources */,
+				AF01F5102434582D00E1149F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6E3C3C24283F40005649B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6E3C4B24283F41005649B0 /* Preview Assets.xcassets in Resources */,
+				AF6E3C4824283F41005649B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF01F5052434582A00E1149F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF61F69E243467D400F00670 /* AppDelegate.swift in Sources */,
+				AF61F6A1243467D400F00670 /* EditorView.swift in Sources */,
+				AF61F6A8243467E700F00670 /* Math.swift in Sources */,
+				AF61F6AB243467E700F00670 /* Utils.swift in Sources */,
+				AF61F6A5243467E700F00670 /* GPT2.swift in Sources */,
+				AF61F6A6243467E700F00670 /* GPT2ByteEncoder.swift in Sources */,
+				AF61F6A3243467D400F00670 /* AppSettings.swift in Sources */,
+				AF61F6A2243467D400F00670 /* SuggestionRow.swift in Sources */,
+				AF61F6A7243467E700F00670 /* GPT2Tokenizer.swift in Sources */,
+				AF61F6A0243467D400F00670 /* ContentView.swift in Sources */,
+				AF61F6A9243467E700F00670 /* MLMultiArray+Utils.swift in Sources */,
+				AF61F6A4243467E700F00670 /* gpt2-64-12-2.mlmodel in Sources */,
+				AF61F6AA243467E700F00670 /* SquadDataset.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6E3C3A24283F40005649B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF01F5142434582D00E1149F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF01F5152434582D00E1149F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF6E3C4C24283F41005649B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF6E3C4D24283F41005649B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF01F51A2434582D00E1149F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartWordDesktop/SmartWordDesktop.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartWordDesktop/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KP2V8DA69;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartWordDesktop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = rm.SmartWordDesktop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AF01F51B2434582D00E1149F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartWordDesktop/SmartWordDesktop.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartWordDesktop/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KP2V8DA69;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartWordDesktop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = rm.SmartWordDesktop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AF6E3C5024283F41005649B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF6E3C5124283F41005649B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF6E3C5324283F41005649B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartWordApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KP2V8DA69;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartWordApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rm.SmartWordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF6E3C5424283F41005649B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartWordApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KP2V8DA69;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartWordApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rm.SmartWordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF01F5192434582D00E1149F /* Build configuration list for PBXNativeTarget "SmartWordDesktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF01F51A2434582D00E1149F /* Debug */,
+				AF01F51B2434582D00E1149F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF6E3C3924283F40005649B0 /* Build configuration list for PBXProject "SmartWordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6E3C5024283F41005649B0 /* Debug */,
+				AF6E3C5124283F41005649B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF6E3C5224283F41005649B0 /* Build configuration list for PBXNativeTarget "SmartWordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6E3C5324283F41005649B0 /* Debug */,
+				AF6E3C5424283F41005649B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF6E3C572428441E005649B0 /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kenmueller/TextView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = AF6E3C3624283F40005649B0 /* Project object */;
+}
